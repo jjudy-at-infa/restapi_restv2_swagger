@@ -1,0 +1,230 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "description" : null,
+    "version" : "1.0.0",
+    "title" : null,
+    "termsOfService" : null,
+    "contact" : null,
+    "license" : null
+  },
+  "host" : "na1.dm-us.informaticacloud.com",
+  "basePath" : "/saas/api",
+  "schemes" : [ "https" ],
+  "paths" : {
+    "/v2/connection/{id}" : {
+      "get" : {
+        "tags" : [ "Connection_Details" ],
+        "summary" : null,
+        "description" : null,
+        "operationId" : "Connection_Details",
+        "produces" : [ "application/json" ],
+        "consumes" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "icSessionId",
+          "in" : "header",
+          "description" : null,
+          "required" : false,
+          "type" : "string"
+        } , {
+          "name" : "id",
+          "in" : "path",
+          "description" : "id",
+          "required" : false,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "$ref" : "#/definitions/Connection_Details"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions" : {
+    "Connection_Details##connParams" : {
+      "properties" : {
+        "agentId" : {
+          "type" : "string"
+        },
+        "Cloud Integration Hub Console Password" : {
+          "type" : "string"
+        },
+        "Publication Repository Service URL" : {
+          "type" : "string"
+        },
+        "Cloud Integration Hub Console Username" : {
+          "type" : "string"
+        },
+        "Cloud Integration Hub Console URL" : {
+          "type" : "string"
+        },
+        "Runtime Environment" : {
+          "type" : "string"
+        },
+        "CryptoProtocolVersion" : {
+          "type" : "string"
+        },		
+        "agentGroupId" : {
+          "type" : "string"
+        },
+        "keyStore" : {
+          "type" : "string"
+        },
+        "trustStore" : {
+          "type" : "string"
+        },
+        "HostNameInCertificate" : {
+          "type" : "string"
+        },
+        "encryptionMethod" : {
+          "type" : "string"
+        },
+        "orgId" : {
+          "type" : "string"
+        },
+        "ValidateServerCertificate" : {
+          "type" : "string"
+        }
+      }
+    },
+    "Connection_Details" : {
+      "properties" : {
+        "@type" : {
+          "type" : "string"
+        },
+        "id" : {
+          "type" : "string"
+        },
+        "orgId" : {
+          "type" : "string"
+        },
+        "name" : {
+          "type" : "string"
+        },
+        "description" : {
+          "type" : "string"
+        },
+        "createTime" : {
+          "type" : "string"
+        },
+        "updateTime" : {
+          "type" : "string"
+        },
+        "createdBy" : {
+          "type" : "string"
+        },
+        "updatedBy" : {
+          "type" : "string"
+        },
+        "agentId" : {
+          "type" : "string"
+        },
+        "runtimeEnvironmentId" : {
+          "type" : "string"
+        },
+		"dateFormat" : {
+          "type" : "string"
+        },
+		"instanceName" : {
+          "type" : "string"
+        },
+        "host" : {
+          "type" : "string"
+        },
+		"domain" : {
+          "type" : "string"
+        },
+        "database" : {
+          "type" : "string"
+        },
+        "codepage" : {
+          "type" : "string"
+        },
+		"clientCode" : {
+          "type" : "string"
+        },
+		"authenticationType" : {
+          "type" : "string"
+        },
+		"persistedType" : {
+          "type" : "string"
+        },
+		"accountNumber" : {
+          "type" : "string"
+        },
+		"remoteDirectory" : {
+          "type" : "string"
+        },
+		"schema" : {
+          "type" : "string"
+        },
+		"serviceUrl" : {
+          "type" : "string"
+        },
+		"shortDescription" : {
+          "type" : "string"
+        },
+		"languageCode" : {
+          "type" : "string"
+        },
+        "adjustedJdbcHostName" : {
+          "type" : "string"
+        },
+        "type" : {
+          "type" : "string"
+        },
+        "port" : {
+          "type" : "number",
+          "format" : "int32"
+        },
+        "password" : {
+          "type" : "string"
+        },
+        "username" : {
+          "type" : "string"
+        },
+		"securityToken" : {
+          "type" : "string"
+        },
+		"stsUrl" : {
+          "type" : "string"
+        },
+		"organizationName" : {
+          "type" : "string"
+        },
+        "majorUpdateTime" : {
+          "type" : "string"
+        },
+		"timeout" : {
+          "type" : "number",
+          "format" : "int32"
+        },
+		"trustCertificatesFile" : {
+          "type" : "string"
+        },
+		"certificateFile" : {
+          "type" : "string"
+        },
+		"certificateFileType" : {
+          "type" : "string"
+        },
+		"privateKeyFile" : {
+          "type" : "string"
+        },
+		"privateKeyPassword" : {
+          "type" : "string"
+        },
+        "privateKeyFileType" : {
+          "type" : "string"
+        },
+        "connParams" : {
+          "$ref" : "#/definitions/Connection_Details##connParams"
+        }
+      }
+    }
+  }
+}
