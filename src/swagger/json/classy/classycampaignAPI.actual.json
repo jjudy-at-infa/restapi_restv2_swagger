@@ -1,0 +1,371 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "description" : null,
+    "version" : "1.0.0",
+    "title" : null,
+    "termsOfService" : null,
+    "contact" : null,
+    "license" : null
+  },
+  "host" : "api.classy.org",
+  "basePath" : "/2.0",
+  "schemes" : [ "https" ],
+  "paths" : {
+    "/organizations/56720/campaigns" : {
+      "get" : {
+        "tags" : [ "classycampaignAPI" ],
+        "summary" : null,
+        "description" : null,
+        "operationId" : "classycampaignAPI",
+        "produces" : [ "application/json" ],
+        "consumes" : [ "application/json" ],
+        "parameters" : [ ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "$ref" : "#/definitions/classycampaignAPI"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions" : {
+    "classycampaignAPI##data" : {
+      "properties" : {
+        "add_registration_fee" : {
+          "type" : "boolean"
+        },
+        "address1" : {
+          "type" : "string"
+        },
+        "allow_duplicate_fundraisers" : {
+          "type" : "boolean"
+        },
+        "allow_ecards" : {
+          "type" : "boolean"
+        },
+        "allow_fundraising_pages" : {
+          "type" : "boolean"
+        },
+        "allow_team_fundraising" : {
+          "type" : "boolean"
+        },
+        "canonical_url" : {
+          "type" : "string"
+        },
+        "category_id" : {
+          "type" : "string"
+        },
+        "channel_id" : {
+          "type" : "string"
+        },
+        "channel_keywords" : {
+          "type" : "string"
+        },
+        "city" : {
+          "type" : "string"
+        },
+        "classy_mode_appeal" : {
+          "type" : "string"
+        },
+        "classy_mode_checked_by_default" : {
+          "type" : "boolean"
+        },
+        "classy_mode_enabled" : {
+          "type" : "boolean"
+        },
+        "contact_email" : {
+          "type" : "string"
+        },
+        "contact_phone" : {
+          "type" : "string"
+        },
+        "country" : {
+          "type" : "string"
+        },
+        "created_at" : {
+          "type" : "string"
+        },
+        "created_with" : {
+          "type" : "string"
+        },
+        "currency_code" : {
+          "type" : "string"
+        },
+        "custom_url" : {
+          "type" : "string"
+        },
+        "default_page_appeal" : {
+          "type" : "string"
+        },
+        "default_page_appeal_email" : {
+          "type" : "string"
+        },
+        "default_page_goal" : {
+          "type" : "number"
+        },
+        "default_page_post_asset_id" : {
+          "type" : "string"
+        },
+        "default_page_post_body" : {
+          "type" : "string"
+        },
+        "default_page_post_title" : {
+          "type" : "string"
+        },
+        "default_page_thank_you_email" : {
+          "type" : "string"
+        },
+        "default_team_appeal" : {
+          "type" : "string"
+        },
+        "default_team_appeal_email" : {
+          "type" : "string"
+        },
+        "default_team_goal" : {
+          "type" : "number"
+        },
+        "default_team_post_asset_id" : {
+          "type" : "string"
+        },
+        "default_team_post_body" : {
+          "type" : "string"
+        },
+        "default_team_post_title" : {
+          "type" : "string"
+        },
+        "default_team_thank_you_email" : {
+          "type" : "string"
+        },
+        "default_thank_you_text" : {
+          "type" : "string"
+        },
+        "designation_id" : {
+          "type" : "number"
+        },
+        "disable_donation_attribution" : {
+          "type" : "boolean"
+        },
+        "display_group_name" : {
+          "type" : "boolean"
+        },
+        "effective_fixed_fot_percent" : {
+          "type" : "string"
+        },
+        "ended_at" : {
+          "type" : "string"
+        },
+        "external_url" : {
+          "type" : "string"
+        },
+        "fixed_fot_percent" : {
+          "type" : "string"
+        },
+        "goal" : {
+          "type" : "number"
+        },
+        "hide_anonymous_donations" : {
+          "type" : "boolean"
+        },
+        "hide_contact_opt_in" : {
+          "type" : "boolean"
+        },
+        "hide_dedications" : {
+          "type" : "boolean"
+        },
+        "hide_donation_comments" : {
+          "type" : "boolean"
+        },
+        "hide_from_profile" : {
+          "type" : "boolean"
+        },
+        "id" : {
+          "type" : "number"
+        },
+        "internal_name" : {
+          "type" : "string"
+        },
+        "is_billing_address_required" : {
+          "type" : "boolean"
+        },
+        "is_ended_at_hidden" : {
+          "type" : "boolean"
+        },
+        "is_fees_free" : {
+          "type" : "boolean"
+        },
+        "is_general" : {
+          "type" : "number"
+        },
+        "is_started_at_hidden" : {
+          "type" : "boolean"
+        },
+        "location_details" : {
+          "type" : "string"
+        },
+        "logo_id" : {
+          "type" : "string"
+        },
+        "logo_url" : {
+          "type" : "string"
+        },
+        "name" : {
+          "type" : "string"
+        },
+        "offer_dedication_postal_notifications" : {
+          "type" : "boolean"
+        },
+        "opt_in_checked_by_default" : {
+          "type" : "boolean"
+        },
+        "organization_id" : {
+          "type" : "number"
+        },
+        "pages_can_set_appeal" : {
+          "type" : "boolean"
+        },
+        "pages_can_set_goal" : {
+          "type" : "boolean"
+        },
+        "postal_code" : {
+          "type" : "string"
+        },
+        "raw_currency_code" : {
+          "type" : "string"
+        },
+        "raw_goal" : {
+          "type" : "string"
+        },
+        "return_url" : {
+          "type" : "string"
+        },
+        "send_dedication_emails" : {
+          "type" : "boolean"
+        },
+        "sort_designation_by" : {
+          "type" : "string"
+        },
+        "started_at" : {
+          "type" : "string"
+        },
+        "state" : {
+          "type" : "string"
+        },
+        "status" : {
+          "type" : "string"
+        },
+        "team_cover_photo_id" : {
+          "type" : "string"
+        },
+        "team_cover_photo_url" : {
+          "type" : "string"
+        },
+        "team_membership_policy" : {
+          "type" : "string"
+        },
+        "teams_can_set_appeal" : {
+          "type" : "boolean"
+        },
+        "teams_can_set_goal" : {
+          "type" : "boolean"
+        },
+        "ticket_pass_on_fees" : {
+          "type" : "boolean"
+        },
+        "timezone_identifier" : {
+          "type" : "string"
+        },
+        "type" : {
+          "type" : "string"
+        },
+        "updated_at" : {
+          "type" : "string"
+        },
+        "venue" : {
+          "type" : "string"
+        }
+      }
+    },
+    "classycampaignAPI##queries_log" : {
+      "properties" : {
+        "query" : {
+          "type" : "string"
+        },
+        "bindings" : {
+          "type" : "string"
+        },
+        "time" : {
+          "type" : "number"
+        }
+      }
+    },
+    "classycampaignAPI##mongo_queries_log" : {
+      "properties" : {
+        "query" : {
+          "type" : "string"
+        },
+        "bindings" : {
+          "type" : "string"
+        },
+        "time" : {
+          "type" : "number"
+        }
+      }
+    },
+    "classycampaignAPI" : {
+      "properties" : {
+        "current_page" : {
+          "type" : "number",
+          "format" : "int32"
+        },
+        "data" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/classycampaignAPI##data"
+          }
+        },
+        "from" : {
+          "type" : "number",
+          "format" : "int32"
+        },
+        "last_page" : {
+          "type" : "number",
+          "format" : "int32"
+        },
+        "next_page_url" : {
+          "type" : "string"
+        },
+        "per_page" : {
+          "type" : "number",
+          "format" : "int32"
+        },
+        "prev_page_url" : {
+          "type" : "string"
+        },
+        "to" : {
+          "type" : "number",
+          "format" : "int32"
+        },
+        "total" : {
+          "type" : "number",
+          "format" : "int32"
+        },
+        "queries_log" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/classycampaignAPI##queries_log"
+          }
+        },
+        "mongo_queries_log" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/classycampaignAPI##mongo_queries_log"
+          }
+        }
+      }
+    }
+  }
+}
