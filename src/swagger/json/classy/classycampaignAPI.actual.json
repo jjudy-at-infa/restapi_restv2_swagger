@@ -8,7 +8,7 @@
     "contact" : null,
     "license" : null
   },
-  "host" : "api.classy.org",
+  "host" : "stagingapi.classy-test.org",
   "basePath" : "/2.0",
   "schemes" : [ "https" ],
   "paths" : {
