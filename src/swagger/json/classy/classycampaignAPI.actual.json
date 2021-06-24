@@ -15,7 +15,7 @@
     "/organizations/56720/campaigns" : {
       "get" : {
         "tags" : [ "classycampaignAPI" ],
-        "summary" : null,
+        "summary" : "summary: list of campaigns from org 56720",
         "description" : null,
         "operationId" : "classycampaignAPI",
         "produces" : [ "application/json" ],
