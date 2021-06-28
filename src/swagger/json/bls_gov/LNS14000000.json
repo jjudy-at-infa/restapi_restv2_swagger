@@ -1,0 +1,114 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "description" : null,
+    "version" : "1.0.0",
+    "title" : null,
+    "termsOfService" : null,
+    "contact" : null,
+    "license" : null
+  },
+  "host" : "api.bls.gov",
+  "basePath" : "/publicAPI",
+  "schemes" : [ "https" ],
+  "paths" : {
+    "/v2/timeseries/data/LNS14000000" : {
+      "get" : {
+        "tags" : [ "LNS14000000" ],
+        "summary" : null,
+        "description" : null,
+        "operationId" : "LNS14000000",
+        "produces" : [ "application/json" ],
+        "consumes" : [ "application/json" ],
+        "parameters" : [ {
+          "name" : "startyear",
+          "in" : "query",
+          "description" : null,
+          "required" : false,
+          "type" : "string"
+        }, {
+          "name" : "endyear",
+          "in" : "query",
+          "description" : null,
+          "required" : false,
+          "type" : "string"
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "$ref" : "#/definitions/LNS14000000"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions" : {
+    "LNS14000000##Results##series##data" : {
+      "properties" : {
+        "year" : {
+          "type" : "string"
+        },
+        "period" : {
+          "type" : "string"
+        },
+        "periodName" : {
+          "type" : "string"
+        },
+        "latest" : {
+          "type" : "string"
+        },
+        "value" : {
+          "type" : "string"
+        },
+        "footnotes" : {
+          "type" : "array",
+          "items" : {
+            "type" : "string"
+          }
+        }
+      }
+    },
+    "LNS14000000##Results##series" : {
+      "properties" : {
+        "seriesID" : {
+          "type" : "string"
+        },
+        "data" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/LNS14000000##Results##series##data"
+          }
+        }
+      }
+    },
+    "LNS14000000##Results" : {
+      "properties" : {
+        "series" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/LNS14000000##Results##series"
+          }
+        }
+      }
+    },
+    "LNS14000000" : {
+      "properties" : {
+        "status" : {
+          "type" : "string"
+        },
+        "responseTime" : {
+          "type" : "number",
+          "format" : "int32"
+        },
+        "message" : {
+          "type" : "string"
+        },
+        "Results" : {
+          "$ref" : "#/definitions/LNS14000000##Results"
+        }
+      }
+    }
+  }
+}
