@@ -1,0 +1,114 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "description" : null,
+    "version" : "1.0.0",
+    "title" : null,
+    "termsOfService" : null,
+    "contact" : null,
+    "license" : null
+  },
+  "host" : "stagingapi.classy-test.org",
+  "basePath" : "/2.0",
+  "schemes" : [ "https" ],
+  "paths" : {
+    "/organizations/56720/supporters" : {
+      "get" : {
+        "tags" : [ "classysupporterAPI" ],
+        "summary" : null,
+        "description" : null,
+        "operationId" : "classysupporterAPI",
+        "produces" : [ "application/json" ],
+        "consumes" : [ "application/json" ],
+        "parameters" : [ ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "$ref" : "#/definitions/classysupporterAPI"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions" : {
+    "classysupporterAPI##data" : {
+      "properties" : {
+        "address1" : {
+          "type" : "string"
+        },
+        "city" : {
+          "type" : "string"
+        },
+        "country" : {
+          "type" : "string"
+        },
+        "created_at" : {
+          "type" : "string"
+        },
+        "email_address" : {
+          "type" : "string"
+        },
+        "first_name" : {
+          "type" : "string"
+        },
+        "gender" : {
+          "type" : "string"
+        },
+        "id" : {
+          "type" : "number"
+        },
+        "last_email_at" : {
+          "type" : "string"
+        },
+        "last_name" : {
+          "type" : "string"
+        },
+        "metadata" : {
+          "type" : "string"
+        },
+        "nickname" : {
+          "type" : "string"
+        },
+        "opt_in" : {
+          "type" : "boolean"
+        },
+        "origin" : {
+          "type" : "string"
+        },
+        "phone" : {
+          "type" : "string"
+        },
+        "postal_code" : {
+          "type" : "string"
+        },
+        "source_campaign_id" : {
+          "type" : "number"
+        },
+        "source_member_id" : {
+          "type" : "number"
+        },
+        "source_organization_id" : {
+          "type" : "number"
+        },
+        "state" : {
+          "type" : "string"
+        },
+        "updated_at" : {
+          "type" : "string"
+        }
+      }
+    },
+    "classysupporterAPI" : {
+      "properties" : {
+        "data" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/classysupporterAPI##data"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,506 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "description" : null,
+    "version" : "1.0.0",
+    "title" : null,
+    "termsOfService" : null,
+    "contact" : null,
+    "license" : null
+  },
+  "host" : "stagingapi.classy-test.org",
+  "basePath" : "/2.0",
+  "schemes" : [ "https" ],
+  "paths" : {
+    "/organizations/56720/transactions" : {
+      "get" : {
+        "tags" : [ "classytransactionAPI" ],
+        "summary" : null,
+        "description" : null,
+        "operationId" : "classytransactionAPI",
+        "produces" : [ "application/json" ],
+        "consumes" : [ "application/json" ],
+        "parameters" : [ ],
+        "responses" : {
+          "200" : {
+            "description" : "successful operation",
+            "schema" : {
+              "$ref" : "#/definitions/classytransactionAPI"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions" : {
+    "classytransactionAPI##data##campaign" : {
+      "properties" : {
+        "address1" : {
+          "type" : "string"
+        },
+        "allow_duplicate_fundraisers" : {
+          "type" : "boolean"
+        },
+        "allow_ecards" : {
+          "type" : "boolean"
+        },
+        "allow_fundraising_pages" : {
+          "type" : "boolean"
+        },
+        "canonical_url" : {
+          "type" : "string"
+        },
+        "category_id" : {
+          "type" : "number",
+          "format" : "int32"
+        },
+        "channel_id" : {
+          "type" : "number",
+          "format" : "int32"
+        },
+        "channel_keywords: `some_keyword`" : {
+          "type" : "string"
+        },
+        "city" : {
+          "type" : "string"
+        },
+        "classy_mode_appeal" : {
+          "type" : "string"
+        },
+        "classy_mode_checked_by_default" : {
+          "type" : "boolean"
+        },
+        "classy_mode_enabled" : {
+          "type" : "boolean"
+        },
+        "collect_shipping_address" : {
+          "type" : "boolean"
+        },
+        "contact_email" : {
+          "type" : "string"
+        },
+        "contact_phone" : {
+          "type" : "string"
+        },
+        "country" : {
+          "type" : "string"
+        },
+        "created_at" : {
+          "type" : "string"
+        },
+        "created_with" : {
+          "type" : "string"
+        },
+        "currency_code" : {
+          "type" : "string"
+        },
+        "default_page_appeal" : {
+          "type" : "string"
+        },
+        "default_page_appeal_email" : {
+          "type" : "string"
+        },
+        "default_page_goal" : {
+          "type" : "number",
+          "format" : "int32"
+        },
+        "default_page_post_asset_id" : {
+          "type" : "number",
+          "format" : "int32"
+        },
+        "default_page_post_body" : {
+          "type" : "string"
+        },
+        "default_page_post_title" : {
+          "type" : "string"
+        },
+        "default_team_appeal" : {
+          "type" : "string"
+        },
+        "default_team_appeal_email" : {
+          "type" : "string"
+        },
+        "default_team_goal" : {
+          "type" : "number",
+          "format" : "int32"
+        },
+        "default_team_post_asset_id" : {
+          "type" : "number",
+          "format" : "int32"
+        },
+        "default_team_post_body" : {
+          "type" : "string"
+        },
+        "default_team_post_title" : {
+          "type" : "string"
+        },
+        "default_thank_you_text" : {
+          "type" : "string"
+        },
+        "designation_id" : {
+          "type" : "number",
+          "format" : "int32"
+        },
+        "disable_donation_attribution" : {
+          "type" : "boolean"
+        },
+        "external_url" : {
+          "type" : "string"
+        },
+        "goal" : {
+          "type" : "number",
+          "format" : "double"
+        },
+        "hide_anonymous_donations" : {
+          "type" : "boolean"
+        },
+        "hide_contact_opt_in" : {
+          "type" : "boolean"
+        },
+        "hide_dedications" : {
+          "type" : "boolean"
+        },
+        "hide_donation_comments" : {
+          "type" : "boolean"
+        },
+        "host_member_id" : {
+          "type" : "number",
+          "format" : "int32"
+        },
+        "is_billing_address_required" : {
+          "type" : "boolean"
+        },
+        "is_ended_at_hidden" : {
+          "type" : "boolean"
+        },
+        "is_fees_free" : {
+          "type" : "boolean"
+        },
+        "is_started_at_hidden" : {
+          "type" : "boolean"
+        },
+        "location_details" : {
+          "type" : "string"
+        },
+        "logo_id" : {
+          "type" : "number",
+          "format" : "int32"
+        },
+        "logo_url" : {
+          "type" : "string"
+        },
+        "name" : {
+          "type" : "string"
+        },
+        "offer_dedication_postal_notifications" : {
+          "type" : "boolean"
+        },
+        "opt_in_checked_by_default" : {
+          "type" : "boolean"
+        },
+        "organization_id" : {
+          "type" : "string"
+        },
+        "postal_code" : {
+          "type" : "string"
+        },
+        "raw_currency_code" : {
+          "type" : "string"
+        },
+        "raw_goal" : {
+          "type" : "number",
+          "format" : "int32"
+        },
+        "send_dedication_emails" : {
+          "type" : "boolean"
+        },
+        "started_at" : {
+          "type" : "string"
+        },
+        "state" : {
+          "type" : "string"
+        },
+        "status" : {
+          "type" : "string"
+        },
+        "team_cover_photo_id" : {
+          "type" : "number",
+          "format" : "int32"
+        },
+        "team_cover_photo_url" : {
+          "type" : "string"
+        },
+        "team_membership_policy" : {
+          "type" : "string"
+        },
+        "ticket_pass_on_fees" : {
+          "type" : "boolean"
+        },
+        "timezone_identifier: `America/Los_Angeles`" : {
+          "type" : "string"
+        },
+        "type" : {
+          "type" : "string"
+        },
+        "updated_at" : {
+          "type" : "string"
+        },
+        "venue" : {
+          "type" : "string"
+        },
+        "fixed_fot_percent" : {
+          "type" : "number",
+          "format" : "int32"
+        },
+        "effective_fixed_fot_percent" : {
+          "type" : "number",
+          "format" : "int32"
+        }
+      }
+    },
+    "classytransactionAPI##data##context" : {
+      "properties" : {
+        "is_passport" : {
+          "type" : "string"
+        },
+        "source_campaign_id" : {
+          "type" : "string"
+        },
+        "source_campaign_type" : {
+          "type" : "string"
+        }
+      }
+    },
+    "classytransactionAPI##data##metadata" : {
+      "properties" : {
+        "foo" : {
+          "type" : "string"
+        }
+      }
+    },
+    "classytransactionAPI##data" : {
+      "properties" : {
+        "account_number" : {
+          "type" : "string"
+        },
+        "account_type" : {
+          "type" : "string"
+        },
+        "acknowledgements_count" : {
+          "type" : "number"
+        },
+        "adjustment_amount: `0.50` (number) - The total value the transaction's total_gross_amount has been adjusted." : {
+          "type" : "string"
+        },
+        "applied_fot_percent" : {
+          "type" : "number"
+        },
+        "billing_address1" : {
+          "type" : "string"
+        },
+        "billing_address2" : {
+          "type" : "string"
+        },
+        "billing_city" : {
+          "type" : "string"
+        },
+        "billing_country" : {
+          "type" : "string"
+        },
+        "billing_first_name" : {
+          "type" : "string"
+        },
+        "billing_last_name" : {
+          "type" : "string"
+        },
+        "billing_postal_code" : {
+          "type" : "string"
+        },
+        "billing_state" : {
+          "type" : "string"
+        },
+        "browser_info" : {
+          "type" : "string"
+        },
+        "campaign" : {
+          "$ref" : "#/definitions/classytransactionAPI##data##campaign"
+        },
+        "campaign_id" : {
+          "type" : "number"
+        },
+        "card_expiration" : {
+          "type" : "string"
+        },
+        "card_last_four" : {
+          "type" : "number"
+        },
+        "card_type" : {
+          "type" : "string"
+        },
+        "charged_at" : {
+          "type" : "string"
+        },
+        "charged_classy_fees_amount" : {
+          "type" : "string"
+        },
+        "charged_currency_code" : {
+          "type" : "string"
+        },
+        "charged_fees_amount" : {
+          "type" : "string"
+        },
+        "charged_pp_fees_amount" : {
+          "type" : "string"
+        },
+        "charged_total_gross_amount" : {
+          "type" : "string"
+        },
+        "classy_fees_amount" : {
+          "type" : "number"
+        },
+        "comment" : {
+          "type" : "string"
+        },
+        "company_name" : {
+          "type" : "string"
+        },
+        "context" : {
+          "$ref" : "#/definitions/classytransactionAPI##data##context"
+        },
+        "created_at" : {
+          "type" : "string"
+        },
+        "designation_id" : {
+          "type" : "number"
+        },
+        "fees_amount" : {
+          "type" : "string"
+        },
+        "fee_on_top" : {
+          "type" : "boolean"
+        },
+        "frequency" : {
+          "type" : "string"
+        },
+        "fundraising_page_id" : {
+          "type" : "number"
+        },
+        "fundraising_team_id" : {
+          "type" : "number"
+        },
+        "gross_amount" : {
+          "type" : "string"
+        },
+        "gross_donation_amount" : {
+          "type" : "string"
+        },
+        "id" : {
+          "type" : "number"
+        },
+        "institution" : {
+          "type" : "string"
+        },
+        "in_honor_of" : {
+          "type" : "string"
+        },
+        "is_anonymous" : {
+          "type" : "boolean"
+        },
+        "is_gift_aid" : {
+          "type" : "boolean"
+        },
+        "member_country" : {
+          "type" : "string"
+        },
+        "member_email_address" : {
+          "type" : "string"
+        },
+        "member_id" : {
+          "type" : "number"
+        },
+        "member_name" : {
+          "type" : "string"
+        },
+        "member_phone" : {
+          "type" : "string"
+        },
+        "metadata" : {
+          "$ref" : "#/definitions/classytransactionAPI##data##metadata"
+        },
+        "net_donation_amount" : {
+          "type" : "string"
+        },
+        "organization_id" : {
+          "type" : "number"
+        },
+        "overhead_net_amount" : {
+          "type" : "string"
+        },
+        "parent_transaction_id" : {
+          "type" : "number"
+        },
+        "payment_gateway" : {
+          "type" : "string"
+        },
+        "payment_method" : {
+          "type" : "string"
+        },
+        "pp_reference_id" : {
+          "type" : "string"
+        },
+        "pp_transaction_id" : {
+          "type" : "string"
+        },
+        "processor_fees_amount" : {
+          "type" : "number"
+        },
+        "promo_code_code" : {
+          "type" : "string"
+        },
+        "purchased_at" : {
+          "type" : "string"
+        },
+        "raw_currency_code" : {
+          "type" : "string"
+        },
+        "raw_donation_gross_amount `1.25`" : {
+          "type" : "number"
+        },
+        "raw_overhead_net_amount `.25`" : {
+          "type" : "number"
+        },
+        "raw_total_gross_amount `1.00`" : {
+          "type" : "number"
+        },
+        "recurring_donation_plan_id" : {
+          "type" : "number"
+        },
+        "refunded_at" : {
+          "type" : "string"
+        },
+        "status" : {
+          "type" : "string"
+        },
+        "supporter_id" : {
+          "type" : "number"
+        },
+        "tax_entity_id" : {
+          "type" : "string"
+        },
+        "updated_at" : {
+          "type" : "string"
+        }
+      }
+    },
+    "classytransactionAPI" : {
+      "properties" : {
+        "data" : {
+          "type" : "array",
+          "items" : {
+            "$ref" : "#/definitions/classytransactionAPI##data"
+          }
+        }
+      }
+    }
+  }
+}
