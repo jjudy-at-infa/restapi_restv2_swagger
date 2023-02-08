@@ -8,7 +8,7 @@
     "contact" : null,
     "license" : null
   },
-  "host" : "na1.dm-us.informaticacloud.com",
+  "host" : "usw1.dm1-us.informaticacloud.com",
   "basePath" : "/saas",
   "schemes" : [ "https" ],
   "paths" : {
